@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type"	content="text/html; charset=gbk">
 <title>证券后台管理系统-系统管理员</title>
          <!-- 页面左部分 -->
-         <%@include file="../left.jsp" %>
+         <%@include file="left.jsp" %>
 		<div id="main-content">
 			<!-- Main Content Section with everything -->
 			<!-- Page Head -->

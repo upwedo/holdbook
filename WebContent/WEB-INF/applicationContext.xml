@@ -21,7 +21,7 @@
 
 	<bean id="dataSource" destroy-method="close" class="com.mchange.v2.c3p0.ComboPooledDataSource">
 	  <property name="driverClass" value="com.mysql.jdbc.Driver"/>
-	  <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/financedata"/>
+	  <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/holdbook"/>
 	  <property name="user" value="root"/>
 	  <property name="password" value="123456"/>
 

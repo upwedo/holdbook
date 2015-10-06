@@ -1,1 +1,1 @@
-<<jsp:forward page="./content/login.jsp"></jsp:forward>
+<jsp:forward page="./content/system/login.jsp"></jsp:forward>
