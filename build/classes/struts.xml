@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.custom.i18n.resources" value="resource"></constant>
+	<constant name="struts.i18n.encoding" value="GBK"></constant>
+	<constant name="struts.devMode" value="true"></constant>
+	<constant name="struts.action.extension" value="action,do,webwork" />
+	<package name="default" extends="struts-default">
+	<!-- 登录 -->
+	<action name="processLogin" class="com.whu.finance.action.LoginAction">
+	   <result name="input">login.jsp</result>
+	   <result name="system">/content/system/index.jsp</result>
+	   <result name="common">/content/common/index.jsp</result>
+	   <result name="error">login.jsp</result>
+	</action>
+		 <!--              代码管理            -->
+	 <!-- 增加实体 -->
+	 <action name="processEntity" class="com.whu.finance.action.EntityAddAction">
+	    <result name="*">/content/entity.jsp</result>
+	 </action>
+	 <!-- 增加DaoImpl -->
+	  <action name="processDaoImpl" class="com.whu.finance.action.DaoImplAddAction">
+	    <result name="*">/content/daoImpl.jsp</result>
+	 </action>
+	 <!-- 增加Service -->
+	  <action name="processService" class="com.whu.finance.action.ServiceAddAction">
+	    <result name="*">/content/service.jsp</result>
+	 </action>
+	 <!-- 增加ServiceImpl -->
+	  <action name="processServiceImpl" class="com.whu.finance.action.ServiceImplAddAction">
+	    <result name="*">/content/serviceImpl.jsp</result>
+	 </action>
+       <!-- 其他 -->
+		<action name="*">
+			<result>/content/{1}.jsp</result>
+		</action>
+	</package> 
+</struts>
