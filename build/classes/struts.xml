@@ -9,20 +9,20 @@
 	<constant name="struts.devMode" value="true"></constant>
 	<constant name="struts.action.extension" value="action,do,hb" />
 	<package name="default" extends="struts-default">
-	<!-- 登录 -->
-	<action name="processLogin" class="com.whu.finance.action.LoginAction">
-	   <result name="input">login.jsp</result>
-	   <result name="system">/content/system/index.jsp</result>
-	   <result name="common">/content/common/index.jsp</result>
-	   <result name="error">login.jsp</result>
-	</action>
-		 <!--              代码管理            -->
-	 <action name="code*" class="com.whu.finance.action.{1}AddAction">
-	    <result name="*">/content/system/{1}.jsp</result>
-	 </action>
-       <!-- 其他 -->
-		<action name="*">
-			<result>/content/system/entity.jsp</result>
+		<!-- 登录 -->
+		<action name="processLogin" class="com.hold.book.action.LoginAction">
+			<result name="input">login.jsp</result>
+			<result name="system">/content/system/index.jsp</result>
+			<result name="common">/content/common/index.jsp</result>
+			<result name="error">login.jsp</result>
 		</action>
-	</package> 
+		<!-- 代码管理 -->
+		<action name="code*" class="com.hold.book.action.{1}AddAction">
+			<result name="*">/content/system/{1}.jsp</result>
+		</action>
+		<!-- 其他 -->
+		<action name="*">
+			<result>/content/system/{1}.jsp</result>
+		</action>
+	</package>
 </struts>

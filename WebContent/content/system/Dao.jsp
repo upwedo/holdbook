@@ -33,7 +33,7 @@
 
 			<div class="clear"></div>
 			<!-- End .clear -->
-			<form action="processDao.action" method="post" >
+			<form action="codeDao.action" method="post" >
 			<s:if test="addDaoTip!=null">
 			<div class="notification success png_bg">
 				<a href="#" class="close"><img src="${pageContext.request.contextPath}/content/images/cross_grey_small.png" title="Close this notification" alt="close" /></a>

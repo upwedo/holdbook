@@ -33,7 +33,7 @@
 
 			<div class="clear"></div>
 			<!-- End .clear -->
-			<form action="processService.do" method="post" >
+			<form action="codeService.do" method="post" >
 			<s:if test="sucessTip!=null">
 			<div class="notification success png_bg">
 				<a href="#" class="close"><img src="${pageContext.request.contextPath}/content/images/cross_grey_small.png" title="Close this notification" alt="close" /></a>

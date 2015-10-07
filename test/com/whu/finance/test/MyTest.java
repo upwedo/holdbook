@@ -6,7 +6,8 @@ import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import com.whu.finance.service.StockIndustryService;
+
+import com.hold.book.service.StockIndustryService;
 
 public class MyTest {
 	private Logger logger=Logger.getLogger(MyTest.class);

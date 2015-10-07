@@ -74,7 +74,7 @@
 					<li><a style="padding-right: 15px;" href="#"
 						class="nav-top-item"> ´úÂë¹ÜÀí </a>
 						<ul style="display: none;">
-							<li><a href="${pageContext.request.contextPath}/entity.do">Entity</a></li>
+							<li><a href="${pageContext.request.contextPath}/Entity.do">Entity</a></li>
 							<li><a href="${pageContext.request.contextPath}/Dao.do">Dao</a></li>
 							<li><a href="${pageContext.request.contextPath}/DaoImpl.do">DaoImpl</a></li>
 							<li><a href="${pageContext.request.contextPath}/Service.do">Service</a></li>

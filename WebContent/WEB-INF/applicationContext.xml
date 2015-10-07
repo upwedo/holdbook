@@ -13,11 +13,11 @@
      http://www.springframework.org/schema/tx
      http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
 	<context:annotation-config></context:annotation-config>
-	<context:component-scan base-package="com.whu.finance.action,
-	    com.whu.finance.dao.impl,com.whu.finance.service.impl,
-	    com.whu.finance.quartz,com.whu.finance.mail,com.whu.finance.excel,
-	    com.whu.finance.divide,com.whu.finance.service.calculate,
-	    com.whu.finance.crawer,com.whu.finance.check"/>
+	<context:component-scan base-package="com.hold.book.action,
+	    com.hold.book.dao.impl,com.hold.book.service.impl,
+	    com.hold.book.quartz,com.hold.book.mail,com.hold.book.excel,
+	    com.hold.book.divide,com.hold.book.service.calculate,
+	    com.hold.book.crawer,com.hold.book.check"/>
 
 	<bean id="dataSource" destroy-method="close" class="com.mchange.v2.c3p0.ComboPooledDataSource">
 	  <property name="driverClass" value="com.mysql.jdbc.Driver"/>
@@ -115,7 +115,7 @@
 	
 	<aop:config>
 	    <!-- 事务切入点配置 -->
-		<aop:pointcut expression="execution(public * com.whu.finance.service..*.*(..))" id="bussinessService"/>		
+		<aop:pointcut expression="execution(public * com.hold.book.service..*.*(..))" id="bussinessService"/>		
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="bussinessService"/>
 		
 	</aop:config>

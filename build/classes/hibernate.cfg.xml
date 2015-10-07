@@ -14,7 +14,7 @@
   <!-- 设置二级缓存的提供者 -->
   <property name="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
   <!-- orm配置 -->
-  <mapping class="com.whu.finance.entity.StockIndustry"/>
-  <mapping class="com.whu.finance.entity.User"/>
+  <mapping class="com.hold.book.entity.StockIndustry"/>
+  <mapping class="com.hold.book.entity.User"/>
  </session-factory>
 </hibernate-configuration>
